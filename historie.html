@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Historie | 9. ZŠ Zlín</title>
+  <meta name="description" content="Historie školy 9. ZŠ Zlín. Přehled klíčových momentů od roku 1932." />
+  <meta name="keywords" content="historie, 9. ZŠ, Zlín, Masarykova, pokusná škola" />
+
+<link rel="icon" href="logo.png" type="image/png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <div class="navbar">
+        <div class="logo-placeholder">
+            <a href="index.html">
+            <img src="logo.png" alt="Logo">
+            </a>
+        </div>
+
+        <div class="nav-items">
+            <div class="nav-links">
+                <div class="nav-item dropdown">
+                    <a class="dropdown-toggle">O škole <i class="fa-solid fa-angle-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="index.html">Úvodní stránka</a>
+                        <a href="soucasnost.html">Současnost</a>
+                        <a href="historie.html">Historie</a>
+                        <a href="kontakty.html">Kontakty</a>
+                    </div>
+                </div>
+                
+                <div class="nav-item dropdown">
+                    <a class="dropdown-toggle">Dokumenty <i class="fa-solid fa-angle-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="rozvrhy.html">Rozvrh hodin 2024/2025</a>
+                        <a href="dokumenty.html">Dokumenty</a>
+                    </div>
+                </div>
+                
+                <div class="nav-item dropdown">
+                    <a class="dropdown-toggle">Pro žáky <i class="fa-solid fa-angle-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="el_zakovska_knizka.html">Elektronická žákovská knížka</a>
+                        <a href="skolni_email.html">Školní e-mail (Office 365)</a>
+                        <a href="specialni_pedagog.html">Speciální pedagog ve škole</a>
+                    </div>
+                </div>
+                
+                <div class="nav-item dropdown">
+                    <a class="dropdown-toggle">Organizace<i class="fa-solid fa-angle-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="skolni_zamestnanci.html">Zaměstnanci školy</a>
+                        <a href="obsazeni_uceben.html">Obsazení učeben</a>
+                        <a href="skolni_druzina.html">Školní družina</a>
+                        <a href="http://www.sjhradska.cz/">Školní jídelna</a>
+                    </div>
+                </div>
+            </div>
+            
+            <form class="search-form desktop" method="GET" action="search.php">
+                <input type="text" name="q" placeholder="Vyhledat..." required>
+                <button type="submit">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 
+                                 0 10-1.397 1.398h-.001l3.85 3.85a1 
+                                 1 0 001.415-1.414l-3.85-3.85zm-5.242 
+                                 1.656a5 5 0 110-10 5 5 0 010 10z"/>
+                    </svg>
+                </button>
+            </form>
+        </div>
+
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-dropdown">
+                <a class="mobile-dropdown-toggle">O škole <i class="fa-solid fa-angle-down"></i></a>
+                <div class="mobile-dropdown-menu">
+                    <a href="index.html">Úvodní stránka</a>
+                    <a href="soucasnost.html">Současnost</a>
+                    <a href="historie.html">Historie</a>
+                    <a href="kontakty.html">Kontakty</a>
+                </div>
+            </div>
+            
+            <div class="mobile-dropdown">
+                <a class="mobile-dropdown-toggle">Dokumenty <i class="fa-solid fa-angle-down"></i></a>
+                <div class="mobile-dropdown-menu">
+                    <a href="rozvrhy.html">Rozvrh hodin 2024/2025</a>
+                    <a href="dokumenty.html">Dokumenty</a>
+                </div>
+            </div>
+            
+            <div class="mobile-dropdown">
+                <a class="mobile-dropdown-toggle">Pro žáky <i class="fa-solid fa-angle-down"></i></a>
+                <div class="mobile-dropdown-menu">
+                    <a href="el_zakovska_knizka.html">Elektronická žákovská knížka</a>
+                    <a href="skolni_email.html">Školní e-mail (Office 365)</a>
+                    <a href="specialni_pedagog.html">Speciální pedagog ve škole</a>
+                </div>
+            </div>
+            
+            <div class="mobile-dropdown">
+                <a class="mobile-dropdown-toggle">Organizace a zázemí <i class="fa-solid fa-angle-down"></i></a>
+                <div class="mobile-dropdown-menu">
+                    <a href="skolni_zamestnanci.html">Zaměstnanci školy</a>
+                    <a href="obsazeni_uceben.html">Obsazení učeben</a>
+                    <a href="skolni_druzina.html">Školní družina</a>
+                    <a href="http://www.sjhradska.cz/">Školní jídelna</a>
+                </div>
+            </div>
+            
+            <form class="search-form mobile" method="GET" action="search.php">
+                <input type="text" name="q" placeholder="Vyhledat..." required>
+                <button type="submit">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 
+                                 0 10-1.397 1.398h-.001l3.85 3.85a1 
+                                 1 0 001.415-1.414l-3.85-3.85zm-5.242 
+                                 1.656a5 5 0 110-10 5 5 0 010 10z"/>
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </div>
+  
+  
+    <div class="contacts">
+      <h1>Historie školy</h1>
+      
+      <div class="contact-section">
+        <p>
+          Poněvadž žáci Masarykovy školy měli býti umístěni ve dvou budovách, v budově Masarykových škol ve městě a v nové budově na Letné, proveden byl zápis (pro školní rok 1932/1933)
+          odděleně podle vyhlášky místní školní rady a ředitelství škol. Výnosem zemské školní rady z 23.9.1932, čís.52779 povoleno bylo zříditi při 1.třídě tři, při 2.třídě tři, při 3.třídě dvě, při 4.třídě dvě 
+          a při 5.třídě dvě pobočky, výnosem zemské školní rady z 10.12.1932, čís.71552, dvě pomocné třídy a výnosem ze 7.2.1933 čís.5702, závěrečnou třídu. Závěrečná třída byla však ponechána 
+          jako předešlého roku při Komenského obecné škole. Čítala tudíž Masarykova obecná škola na počátku roku 5 postupných tříd, 12 poboček, 1 třídu na expozituře na Zlínských Pasekách a 2 pomocné třídy,
+          celkem 20 tříd.
+        </p>
+        
+        <p>
+          Na žádost místní školní rady povolila zemská školní rada rozdělení Masarykovy obecné školy na dvě školy: Masarykovu obecnou školu ve městě a Obecnou školu na Letné
+          s podmínkou, že místo řídícího učitele nebude na nové škole systemisováno, pokud zemské hospodaření bude v tísni (výnos zemské školní rady z 24.9.1932, čís.47284).
+        </p>
+        
+        <p>
+          Tak od 1.října 1932 vznikly z původní Masarykovy obecné školy školy dvě. Rozdělením žactva na dvě školy změnil se stav tak, že místní školní rada byla nucena zažádati o povolení nových poboček. 
+          Výnosem z 23.9.1932, čís.52799 bylo povoleno zříditi při obecné škole Masarykově ve městě 5 postupných tříd a 5 poboček. Měla tudíž škola od 1.října 1932 5 normálních postupných tříd, 
+          5 poboček, 1 třídu na expozituře na Zlínských Pasekách a 2 pomocné třídy, celkem 13 tříd. Na škole na Letné vzniklo rovněž 13 tříd. Rozdělením školy vzniklo tudíž 6 nových tříd.
+        </p>
+        
+        <p>
+          Již v červnu 1932 zažádala místní školní rada, aby Masarykova obecná škola proměněna byla v pokusnou školu. Žádost byla příznivě vyřízena výnosem ministerstva školství 
+          a národní osvěty ze 7.9.1932, čís.100008 a statut Masarykovy pokusné obecné školy byl schválen výnosem zemské školní rady z 16.9.1932, čís.51872/32. Pokusná škola povolena byla na 
+          pět let a to na školní rok 1932/1933 až 1936/1937. Výnosem zemské školní rady ze 17.10.1932, čís.61056 stanoveny byly úřední názvy škol, a to: Masarykova pokusná obecná škola ve Zlíně a 
+          Obecná škola na Letné ve Zlíně.
+        </p>
+        
+        <p>
+          Velké nesnáze způsobilo umístění tříd. Prudký rozvoj diferencované pokusné školy měšťanské způsobil, že v budově Masarykových škol nebylo vůbec místa pro třídy obecné školy. Zůstala v této budově 
+          pouze ředitelna. Osm tříd obecné školy bylo umístěno v nové budově na Letné, pět tříd v budově živnostenských škol pokračovacích, šest tříd ve staré budově Komenského školy, z nich jedna v tělocvičně 
+          a jedna v kreslírně a jedna třída expositury ve vlastní budově na Zlínských Pasekách.
+        </p>
+        
+        <p>
+          Nesnázi této napomohla firma Baťa a.s., která počala již na jaře 1932 se stavbou nové budovy pro Masarykovu obecnou školu. Na stavbě se pracovalo velmi pilně. Již 25.září 1932 byla stavba dokončena 
+          a vybavena nářadím a nábytkem tak, že se v ní mohlo již od 1.října vyučuoti.
+        </p>
+        
+        <p>
+          Se stavbou nové budovy bylo počato již záhy z jara, později však práce byla přerušena a do konce července 1932 se na stavbě nepracovalo. Když bylo zřejmo, že po prázdninách nebude míti obecná škola 
+          vůbec místa v budově Masarykových škol, rozhodla se firma Baťa a.s. budovu rychle dostavěti. Plány a rozpočty byly firmou schváleny. Podle pracovního plánu měla býti stavba dokončena do konce října 1932. 
+          Ale p.D.Čipera seškrtal pracovní plán a sám stanovil pracovní lhůty. Podle nich měla být škola hotova již 15.září. Na stavbě začal v srpnu nevídaný ruch. Zedníci, betonáři, instalatéři a jiní řemeslníci 
+          pracovali současně, často si vzájemně překáželi a obviňovali se, že jeden druhému kazí práci. Lhůta byla sice o něco překročena, přece však byla škola do 1.října hotova tak, že se v ní mohlo vyučuoti. 
+          Zdivo bylo suché, neboť dešťů v době stavby bylo velmi poskrovnu. Stavitel p.Šícha neměl ani dostatek vody ve Zlíně. Studny byly prázdné, Dřevnice vyschlá. Voda na stavbu se dovážela z Moravy 
+          a stavitel si stěžoval, že za dovoz vody zaplatil 15 000,-Kč.
+        </p>
+        
+        <p>
+          Budova jest prakticky vystavěna. Vestibulem vcházejí žáci do šaten, v nichž mají vždy dvě třídy jeden stojan. Každý žák má svůj věšák očíslovaný i své místo pro uložení obuvi. Ze šatny lze vejíti do 
+          široké síně vybavené lavičkami a věšáky, která slouží za šatnu pro tělocvičnu a sprchy. Ze síně se vchází do dílny, do tělocvičny a ke sprchám. Sprchovna jest opatřena deseti růžicemi, dvěma plynovými 
+          ohřívači vody a korytem na umívání s kohoutky na teplou i studenou vodu. Žáci, kteří odloží v ústřední šatně svrchní oděv a přezují se, vracejí se do vestibulu a jdou schodištěm do 1.patra.
+        </p>
+        
+        <p>
+          V přízemí mimo jmenované místnosti jest ještě byt školníka, temná komora, topná komora a komůrka pro uschování čistících potřeb a záchody pro děti, zdržující se v přízemí.
+        </p>
+        
+        <p>
+          V prvním patře jest dvorana do níž se vejde 400 žáků, tři učebny, ředitelna, sborovna a klosety, ve druhém a třetím patře vždy po šesti učebnách a klosety. Budova se otopuje teplým vzduchem, 
+          kromě toho ředitelna a sborovna také plynem. Každou třídu osvětluje šest elektrických lamp. Podlahy jsou vesměs xylolithové, na chodbách ve zdi jsou vitriny. Skříně jsou všude vsazeny do 
+          zdi, jen v ředitelně, sborovně a sbírkovně jsou skříně samostatné.
+        </p>
+        
+        <p>
+          Vnitřní zařízení zhotovila firma Baťa a.s. ve svých dílnách. Pouze stolky a židle pro žáky, tabule, stojan na mapy, okrouhlý stolek do ředitelny, stůl pro psací stroj a konsolky 
+          na křídu a houby dodala firma Šponar z Přerova, záclony do oken a závěsy k zatemnění dvorany firma L.Malosta ze Zlína a tělocvičné nářadí firma Hujňák z Brna. Číslování dveří 
+          bylo provedeno tak, že stovky v číslech znamenají poschodí.
+        </p>
+        
+        <p>
+          Nová škola svou účelností budila obdiv všech návštěvníků a jest dosud nejpěknější a nejlépe řešenou školou ve Zlíně.
+        </p>
+
+
+  </main>
+
+  <footer>
+    <p>© 2025 9. ZŠ Zlín</p>
+    <p>
+        <a href="mailto:info@9zszlin.cz">info@9zszlin.cz</a> | Tel: +420 577 210 772<br>
+        <a href="admin.php">Administrace</a>
+    </p>
+  </footer>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

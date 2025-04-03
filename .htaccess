@@ -1,0 +1,17 @@
+# Nastavení chybové stránky
+ErrorDocument 404 /404.html
+
+# Přesměrování s absolutní cestou
+RedirectMatch 301 ^/admin$ https://pharo.tode.cz/admin.php
+
+RedirectMatch 301 ^/administrace$ https://pharo.tode.cz/admin.php
+
+RedirectMatch 301 ^/prihlaseni$ https://pharo.tode.cz/login.php
+
+RedirectMatch 301 ^/login$ https://pharo.tode.cz/login.php
+
+RedirectMatch 301 ^/kontakty$ https://pharo.tode.cz/kontakty.html
+
+RedirectMatch 301 ^/rozvrhy$ https://pharo.tode.cz/rozvrhy.html
+
+RedirectMatch 301 ^/dokumenty$ https://pharo.tode.cz/dokumenty.html

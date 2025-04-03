@@ -1,0 +1,197 @@
+<!DOCTYPE HTML>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speciální pedagog | 9. ZŠ Zlín</title>
+    
+    <meta name="description" content="Informace o speciálním pedagogovi na 9. ZŠ Zlín." />
+    <meta name="keywords" content="9. ZŠ Zlín, speciální pedagog, základní škola, vzdělání, Zlín" />
+    
+    <meta property="og:title" content="Speciální pedagog | 9. ZŠ Zlín" />
+    <meta property="og:description" content="Informace o speciálním pedagogovi na 9. ZŠ Zlín." />
+    <meta property="og:image" content="logo.png" />
+    <meta property="og:type" content="website" />
+    
+    <link rel="icon" href="logo.png" type="image/png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main>
+    <div class="navbar">
+        <div class="logo-placeholder">
+            <a href="index.html">
+            <img src="logo.png" alt="Logo">
+            </a>
+        </div>
+
+        <div class="nav-items">
+            <div class="nav-links">
+                <div class="nav-item dropdown">
+                    <a class="dropdown-toggle">O škole <i class="fa-solid fa-angle-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="index.html">Úvodní stránka</a>
+                        <a href="soucasnost.html">Současnost</a>
+                        <a href="historie.html">Historie</a>
+                        <a href="kontakty.html">Kontakty</a>
+                    </div>
+                </div>
+                
+                <div class="nav-item dropdown">
+                    <a class="dropdown-toggle">Dokumenty <i class="fa-solid fa-angle-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="rozvrhy.html">Rozvrh hodin 2024/2025</a>
+                        <a href="dokumenty.html">Dokumenty</a>
+                    </div>
+                </div>
+                
+                <div class="nav-item dropdown">
+                    <a class="dropdown-toggle">Pro žáky <i class="fa-solid fa-angle-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="el_zakovska_knizka.html">Elektronická žákovská knížka</a>
+                        <a href="skolni_email.html">Školní e-mail (Office 365)</a>
+                        <a href="specialni_pedagog.html">Speciální pedagog ve škole</a>
+                    </div>
+                </div>
+                
+                <div class="nav-item dropdown">
+                    <a class="dropdown-toggle">Organizace<i class="fa-solid fa-angle-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="skolni_zamestnanci.html">Zaměstnanci školy</a>
+                        <a href="obsazeni_uceben.html">Obsazení učeben</a>
+                        <a href="skolni_druzina.html">Školní družina</a>
+                        <a href="http://www.sjhradska.cz/">Školní jídelna</a>
+                    </div>
+                </div>
+            </div>
+            
+            <form class="search-form desktop" method="GET" action="search.php">
+                <input type="text" name="q" placeholder="Vyhledat..." required>
+                <button type="submit">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 
+                                 0 10-1.397 1.398h-.001l3.85 3.85a1 
+                                 1 0 001.415-1.414l-3.85-3.85zm-5.242 
+                                 1.656a5 5 0 110-10 5 5 0 010 10z"/>
+                    </svg>
+                </button>
+            </form>
+        </div>
+
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-dropdown">
+                <a class="mobile-dropdown-toggle">O škole <i class="fa-solid fa-angle-down"></i></a>
+                <div class="mobile-dropdown-menu">
+                    <a href="index.html">Úvodní stránka</a>
+                    <a href="soucasnost.html">Současnost</a>
+                    <a href="historie.html">Historie</a>
+                    <a href="kontakty.html">Kontakty</a>
+                </div>
+            </div>
+            
+            <div class="mobile-dropdown">
+                <a class="mobile-dropdown-toggle">Dokumenty <i class="fa-solid fa-angle-down"></i></a>
+                <div class="mobile-dropdown-menu">
+                    <a href="rozvrhy.html">Rozvrh hodin 2024/2025</a>
+                    <a href="dokumenty.html">Dokumenty</a>
+                </div>
+            </div>
+            
+            <div class="mobile-dropdown">
+                <a class="mobile-dropdown-toggle">Pro žáky <i class="fa-solid fa-angle-down"></i></a>
+                <div class="mobile-dropdown-menu">
+                    <a href="el_zakovska_knizka.html">Elektronická žákovská knížka</a>
+                    <a href="skolni_email.html">Školní e-mail (Office 365)</a>
+                    <a href="specialni_pedagog.html">Speciální pedagog ve škole</a>
+                </div>
+            </div>
+            
+            <div class="mobile-dropdown">
+                <a class="mobile-dropdown-toggle">Organizace a zázemí <i class="fa-solid fa-angle-down"></i></a>
+                <div class="mobile-dropdown-menu">
+                    <a href="skolni_zamestnanci.html">Zaměstnanci školy</a>
+                    <a href="obsazeni_uceben.html">Obsazení učeben</a>
+                    <a href="skolni_druzina.html">Školní družina</a>
+                    <a href="http://www.sjhradska.cz/">Školní jídelna</a>
+                </div>
+            </div>
+            
+            <form class="search-form mobile" method="GET" action="search.php">
+                <input type="text" name="q" placeholder="Vyhledat..." required>
+                <button type="submit">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 
+                                 0 10-1.397 1.398h-.001l3.85 3.85a1 
+                                 1 0 001.415-1.414l-3.85-3.85zm-5.242 
+                                 1.656a5 5 0 110-10 5 5 0 010 10z"/>
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </div>
+
+        <div class="contacts">
+            <h1>Speciální pedagog</h1>
+            
+            <div class="contact-section">
+                <p>Od 1.9.2017 pracuje v naší škole speciální pedagog, ve školním roce 2024/2025 to je Mgr. Lucie Kropáčová. Orientuje se na poradenskou podporu a péči pro žáky s výchovnými či vzdělávacími obtížemi, poskytuje individuální a skupinové poradenství žákům, zákonným zástupcům a pedagogům. Nabízí možnost konzultovat výchovné a jiné problémy. Konzultace se zákonnými zástupci budou probíhat vždy po předchozí telefonní či e-mailové domluvě, lze dohodnout termín i mimo konzultační hodiny.</p>
+
+                <h2>Speciální pedagog Mgr. Lucie Kropáčová</h2>
+                
+                <ul>
+                    <li><strong>E-mail:</strong> <a href="mailto:kropacova@9zszlin.cz">kropacova@9zszlin.cz</a></li>
+                    <li><strong>Konzultační hodiny:</strong> pondělí, středa, čtvrtek, pátek vždy v době 8:00 – 9:30 hod.</li>
+                    <li><strong>Telefon:</strong> 577 011 771</li>
+                </ul>
+                
+                <p><strong>Telefon je v provozu pouze v době konzultačních hodin!</strong></p>
+                
+                <p>Mimo konzultační hodiny kontaktujte speciálního pedagoga e-mailem
+                nebo zanechejte vzkaz v kanceláři školy - telefon 577 210 772.</p>
+
+                <h3>Pro zákonné zástupce</h3>
+                <ul>
+                    <li>konzultace o výchovných problémech</li>
+                    <li>doporučení vhodných výchovných postupů</li>
+                    <li>rodinné konzultace (dítě společně s rodičem)</li>
+                </ul>
+                
+                <h3>Pro žáky</h3>
+                <ul>
+                    <li>individuální konzultace o problémech s učením, vztahy s vrstevníky, učiteli, rodiči ...</li>
+                    <li>individuální konzultace pro žáky s poruchami chování</li>
+                    <li>individuální práce s žáky se specifickými vývojovými poruchami učení</li>
+                </ul>
+                
+                <h3>Pro pedagogy</h3>
+                <ul>
+                    <li>konzultace o žácích s výchovnými problémy</li>
+                    <li>doporučení vhodných metodických postupů</li>
+                    <li>pomoc při sestavování IVP</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 9. ZŠ Zlín</p>
+        <p>
+            <a href="mailto:info@9zszlin.cz">info@9zszlin.cz</a> | Tel: +420 577 210 772<br>
+            <a href="admin.php">Administrace</a>
+        </p>
+      </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

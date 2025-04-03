@@ -1,0 +1,207 @@
+<!DOCTYPE HTML>
+<html lang="cs">
+
+<head>
+    <!-- ZÁKLADNÍ SEO  -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Školní družina | 9. ZŠ Zlín</title>
+    
+    <meta name="description" content="Informace o školní družině 9. ZŠ Zlín. Kontakty, provozní doba a další důležité informace." />
+    <meta name="keywords" content="9. ZŠ Zlín, školní družina, školní zaměstnanci, vychovatelky" />
+    
+    <meta property="og:title" content="Školní družina | 9. ZŠ Zlín" />
+    <meta property="og:description" content="Informace o školní družině 9. ZŠ Zlín. Kontakty, provozní doba a další důležité informace." />
+    <meta property="og:image" content="logo.png" />
+    <meta property="og:type" content="website" />
+
+    <link rel="icon" href="logo.png" type="image/png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main>
+    <div class="navbar">
+        <div class="logo-placeholder">
+            <a href="index.html">
+            <img src="logo.png" alt="Logo">
+            </a>
+        </div>
+
+        <div class="nav-items">
+            <div class="nav-links">
+                <div class="nav-item dropdown">
+                    <a class="dropdown-toggle">O škole <i class="fa-solid fa-angle-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="index.html">Úvodní stránka</a>
+                        <a href="soucasnost.html">Současnost</a>
+                        <a href="historie.html">Historie</a>
+                        <a href="kontakty.html">Kontakty</a>
+                    </div>
+                </div>
+                
+                <div class="nav-item dropdown">
+                    <a class="dropdown-toggle">Dokumenty <i class="fa-solid fa-angle-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="rozvrhy.html">Rozvrh hodin 2024/2025</a>
+                        <a href="dokumenty.html">Dokumenty</a>
+                    </div>
+                </div>
+                
+                <div class="nav-item dropdown">
+                    <a class="dropdown-toggle">Pro žáky <i class="fa-solid fa-angle-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="el_zakovska_knizka.html">Elektronická žákovská knížka</a>
+                        <a href="skolni_email.html">Školní e-mail (Office 365)</a>
+                        <a href="specialni_pedagog.html">Speciální pedagog ve škole</a>
+                    </div>
+                </div>
+                
+                <div class="nav-item dropdown">
+                    <a class="dropdown-toggle">Organizace<i class="fa-solid fa-angle-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="skolni_zamestnanci.html">Zaměstnanci školy</a>
+                        <a href="obsazeni_uceben.html">Obsazení učeben</a>
+                        <a href="skolni_druzina.html">Školní družina</a>
+                        <a href="http://www.sjhradska.cz/">Školní jídelna</a>
+                    </div>
+                </div>
+            </div>
+            
+            <form class="search-form desktop" method="GET" action="search.php">
+                <input type="text" name="q" placeholder="Vyhledat..." required>
+                <button type="submit">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 
+                                 0 10-1.397 1.398h-.001l3.85 3.85a1 
+                                 1 0 001.415-1.414l-3.85-3.85zm-5.242 
+                                 1.656a5 5 0 110-10 5 5 0 010 10z"/>
+                    </svg>
+                </button>
+            </form>
+        </div>
+
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-dropdown">
+                <a class="mobile-dropdown-toggle">O škole <i class="fa-solid fa-angle-down"></i></a>
+                <div class="mobile-dropdown-menu">
+                    <a href="index.html">Úvodní stránka</a>
+                    <a href="soucasnost.html">Současnost</a>
+                    <a href="historie.html">Historie</a>
+                    <a href="kontakty.html">Kontakty</a>
+                </div>
+            </div>
+            
+            <div class="mobile-dropdown">
+                <a class="mobile-dropdown-toggle">Dokumenty <i class="fa-solid fa-angle-down"></i></a>
+                <div class="mobile-dropdown-menu">
+                    <a href="rozvrhy.html">Rozvrh hodin 2024/2025</a>
+                    <a href="dokumenty.html">Dokumenty</a>
+                </div>
+            </div>
+            
+            <div class="mobile-dropdown">
+                <a class="mobile-dropdown-toggle">Pro žáky <i class="fa-solid fa-angle-down"></i></a>
+                <div class="mobile-dropdown-menu">
+                    <a href="el_zakovska_knizka.html">Elektronická žákovská knížka</a>
+                    <a href="skolni_email.html">Školní e-mail (Office 365)</a>
+                    <a href="specialni_pedagog.html">Speciální pedagog ve škole</a>
+                </div>
+            </div>
+            
+            <div class="mobile-dropdown">
+                <a class="mobile-dropdown-toggle">Organizace a zázemí <i class="fa-solid fa-angle-down"></i></a>
+                <div class="mobile-dropdown-menu">
+                    <a href="skolni_zamestnanci.html">Zaměstnanci školy</a>
+                    <a href="obsazeni_uceben.html">Obsazení učeben</a>
+                    <a href="skolni_druzina.html">Školní družina</a>
+                    <a href="http://www.sjhradska.cz/">Školní jídelna</a>
+                </div>
+            </div>
+            
+            <form class="search-form mobile" method="GET" action="search.php">
+                <input type="text" name="q" placeholder="Vyhledat..." required>
+                <button type="submit">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 
+                                 0 10-1.397 1.398h-.001l3.85 3.85a1 
+                                 1 0 001.415-1.414l-3.85-3.85zm-5.242 
+                                 1.656a5 5 0 110-10 5 5 0 010 10z"/>
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </div>
+
+
+        <div class="contacts">
+            <h1>Školní družina</h1>
+            
+            <div class="contact-section">
+                <p>školní rok 2024/2025</p>
+
+                <p>Telefon: 577 434 625</p>
+
+                <p>Vedoucí vychovatelka: 771 173 282</p>
+
+                <p>Provozní doba: 6:30–7:45 h 11:35–16:45 h</p>
+
+                <p>Školní družina je umístěna v dětském pavilonu Kolektivního domu (areál MŠ Osvoboditelů).</p>
+
+                <p>Některá oddělení jsou po určitou dobu provozu umístěna v budově školy.</p>
+
+                <p>Důležité informace k provozu školní družiny najdete ve vnitřním řádu.</p>
+
+                <h2>Oddělení školní družiny 2024/2025</h2>
+
+                <p>1. oddělení (I. A) - vychovatelka Ivana Polanská (<a href="mailto:polanska@9zszlin.cz">polanska@9zszlin.cz</a>), budova ŠD</p>
+
+                <p>2. oddělení (I. B)- vychovatelka Hana Schovajsová (<a href="mailto:schovajsova@9zszlin.cz">schovajsova@9zszlin.cz</a>), budova ŠD</p>
+
+                <p>3. oddělení (II. A, III. A) - vychovatelka Hana Burešová (<a href="mailto:buresova@9zszlin.cz">buresova@9zszlin.cz</a>)<br>
+                budova školy - učebna II. A, 1. poschodí č. 6</p>
+
+                <p>4. oddělení (II. B, III. B) - vychovatelka Bc. Michaela Černá (<a href="mailto:cerna@9zszlin.cz">cerna@9zszlin.cz</a>), budova ŠD</p>
+
+                <p>5. oddělení (3. ročník) - vychovatelka Bc. Johana Špačková (<a href="mailto:spackova@9zszlin.cz">spackova@9zszlin.cz</a>)<br>
+                budova školy - učebna III. A, 1. poschodí č. 10</p>
+
+                <p>V únoru 2025 vybíráme poplatek za provoz školní družiny<br>
+                za období únor 2025 - červen 2025 ve výši 1.500 Kč (5 x 300 Kč)</p>
+
+                <h3>Bezhotovostní platba</h3>
+                <p>Upřednostňujeme!</p>
+                <p>částka: 1.500 Kč</p>
+                <p>číslo účtu: 1422698319/0800</p>
+                <p>variabilní symbol: obdrží zákonní zástupci písemně</p>
+                <p>(sdělí Vám jej kdykoliv vychovatelka nebo v kanceláři školy)</p>
+                <p>zpráva pro příjemce: Jméno a příjmení dítěte</p>
+
+                <h3>Hotovostní platba</h3>
+                <p>částka: 1.500 Kč</p>
+                <p>Poplatek zaplaťte vychovatelce (po domluvě) nebo účetní v kanceláři školy</p>
+                <p>Obdržíte příjmový pokladní doklad</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 9. ZŠ Zlín</p>
+        <p>
+            <a href="mailto:info@9zszlin.cz">info@9zszlin.cz</a> | Tel: +420 577 210 772<br>
+            <a href="admin.php">Administrace</a>
+        </p>
+      </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

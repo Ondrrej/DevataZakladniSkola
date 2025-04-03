@@ -1,0 +1,276 @@
+<!DOCTYPE HTML>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obsazení učeben | 9. ZŠ Zlín</title>
+    
+    <meta name="description" content="Obsazení učeben 9. ZŠ Zlín pro školní rok 2024/2025." />
+    <meta name="keywords" content="9. ZŠ Zlín, základní škola, učebny, obsazení učeben, rozdělení učeben" />
+    
+    <meta property="og:title" content="Obsazení učeben | 9. ZŠ Zlín" />
+    <meta property="og:description" content="Obsazení učeben 9. ZŠ Zlín pro školní rok 2024/2025." />
+    <meta property="og:image" content="logo.png" />
+    <meta property="og:type" content="website" />
+    
+    <link rel="icon" href="logo.png" type="image/png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main>
+    <div class="navbar">
+        <div class="logo-placeholder">
+            <a href="index.html">
+            <img src="logo.png" alt="Logo">
+            </a>
+        </div>
+
+        <div class="nav-items">
+            <div class="nav-links">
+                <div class="nav-item dropdown">
+                    <a class="dropdown-toggle">O škole <i class="fa-solid fa-angle-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="index.html">Úvodní stránka</a>
+                        <a href="soucasnost.html">Současnost</a>
+                        <a href="historie.html">Historie</a>
+                        <a href="kontakty.html">Kontakty</a>
+                    </div>
+                </div>
+                
+                <div class="nav-item dropdown">
+                    <a class="dropdown-toggle">Dokumenty <i class="fa-solid fa-angle-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="rozvrhy.html">Rozvrh hodin 2024/2025</a>
+                        <a href="dokumenty.html">Dokumenty</a>
+                    </div>
+                </div>
+                
+                <div class="nav-item dropdown">
+                    <a class="dropdown-toggle">Pro žáky <i class="fa-solid fa-angle-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="el_zakovska_knizka.html">Elektronická žákovská knížka</a>
+                        <a href="skolni_email.html">Školní e-mail (Office 365)</a>
+                        <a href="specialni_pedagog.html">Speciální pedagog ve škole</a>
+                    </div>
+                </div>
+                
+                <div class="nav-item dropdown">
+                    <a class="dropdown-toggle">Organizace<i class="fa-solid fa-angle-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="skolni_zamestnanci.html">Zaměstnanci školy</a>
+                        <a href="obsazeni_uceben.html">Obsazení učeben</a>
+                        <a href="skolni_druzina.html">Školní družina</a>
+                        <a href="http://www.sjhradska.cz/">Školní jídelna</a>
+                    </div>
+                </div>
+            </div>
+            
+            <form class="search-form desktop" method="GET" action="search.php">
+                <input type="text" name="q" placeholder="Vyhledat..." required>
+                <button type="submit">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 
+                                 0 10-1.397 1.398h-.001l3.85 3.85a1 
+                                 1 0 001.415-1.414l-3.85-3.85zm-5.242 
+                                 1.656a5 5 0 110-10 5 5 0 010 10z"/>
+                    </svg>
+                </button>
+            </form>
+        </div>
+
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-dropdown">
+                <a class="mobile-dropdown-toggle">O škole <i class="fa-solid fa-angle-down"></i></a>
+                <div class="mobile-dropdown-menu">
+                    <a href="index.html">Úvodní stránka</a>
+                    <a href="soucasnost.html">Současnost</a>
+                    <a href="historie.html">Historie</a>
+                    <a href="kontakty.html">Kontakty</a>
+                </div>
+            </div>
+            
+            <div class="mobile-dropdown">
+                <a class="mobile-dropdown-toggle">Dokumenty <i class="fa-solid fa-angle-down"></i></a>
+                <div class="mobile-dropdown-menu">
+                    <a href="rozvrhy.html">Rozvrh hodin 2024/2025</a>
+                    <a href="dokumenty.html">Dokumenty</a>
+                </div>
+            </div>
+            
+            <div class="mobile-dropdown">
+                <a class="mobile-dropdown-toggle">Pro žáky <i class="fa-solid fa-angle-down"></i></a>
+                <div class="mobile-dropdown-menu">
+                    <a href="el_zakovska_knizka.html">Elektronická žákovská knížka</a>
+                    <a href="skolni_email.html">Školní e-mail (Office 365)</a>
+                    <a href="specialni_pedagog.html">Speciální pedagog ve škole</a>
+                </div>
+            </div>
+            
+            <div class="mobile-dropdown">
+                <a class="mobile-dropdown-toggle">Organizace a zázemí <i class="fa-solid fa-angle-down"></i></a>
+                <div class="mobile-dropdown-menu">
+                    <a href="skolni_zamestnanci.html">Zaměstnanci školy</a>
+                    <a href="obsazeni_uceben.html">Obsazení učeben</a>
+                    <a href="skolni_druzina.html">Školní družina</a>
+                    <a href="http://www.sjhradska.cz/">Školní jídelna</a>
+                </div>
+            </div>
+            
+            <form class="search-form mobile" method="GET" action="search.php">
+                <input type="text" name="q" placeholder="Vyhledat..." required>
+                <button type="submit">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 
+                                 0 10-1.397 1.398h-.001l3.85 3.85a1 
+                                 1 0 001.415-1.414l-3.85-3.85zm-5.242 
+                                 1.656a5 5 0 110-10 5 5 0 010 10z"/>
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </div>
+
+
+        <div class="contacts">
+            <h1>Obsazení učeben</h1>
+            
+            <div class="contact-section">
+                <p class="school-year">školní rok 2024/2025</p>
+                
+                <section class="floor">
+                    <h2>Přízemí</h2>
+                    <ul class="room-list">
+                        <li>tělocvična</li>
+                        <li>šatny pro tělesnou výchovu</li>
+                        <li>cvičná kuchyně</li>
+                        <li>školní dílna</li>
+                        <li>šatny 1.–4. ročník</li>
+                        <li>výměníková stanice</li>
+                        <li>školní byt</li>
+                        <li>šatna u služebního vchodu</li>
+                        <li>strojovna výtahu</li>
+                    </ul>
+                </section>
+                
+                <section class="floor">
+                    <h2>Mezipatro</h2>
+                    <ul class="room-list">
+                        <li>šatny 5.–9. ročník</li>
+                        <li>dílna školníka - Zdeněk Krčma</li>
+                        <li>kabinet TV - Mgr. Iva Kočendová</li>
+                        <li>šatna správních zaměstnanců</li>
+                        <li>školní poradenské pracoviště - učebna</li>
+                        <li>sklady</li>
+                        <li>spisovna</li>
+                        <li>sklad školní dílny</li>
+                        <li>sklad tělesné výchovy</li>
+                    </ul>
+                </section>
+                
+                <section class="floor">
+                    <h2>1. patro</h2>
+                    <ol class="room-list numbered">
+                        <li>ředitelna školy -  Mgr. Miroslav Nejezchleba</li>
+                        <li>kancelář školy -  Ing. Jana Štalmachová, Romana Malčíková</li>
+                        <li>kancelář zástupkyně ředitele pro 1. stupeň - Mgr. Danuše Kozánková</li>
+                        <li>učebna  III. B  třídní učitelka - Mgr. Veronika Čechmanová, DiS.</li>
+                        <li>učebna  I. B   třídní učitelka - Mgr. Zuzana Chvílová</li>
+                        <li>učebna  II. A   třídní učitelka - Mgr. Monika Eremiášová</li>
+                        <li>sborovna</li>
+                        <li>kabinet  1. stupně <br> 
+                                                - Mgr. Monika Eremiášová<br>
+                                               - Mgr. Zuzana Chvílová<br>
+                                               - Mgr. Markéta Nováková<br>
+                                               - Mgr. Lenka Šínová<br>
+                                               - Mgr. Ivana Vítková<br>
+                                               - Bc. Tereza Bobálová<br>
+                                               - Monika Kráčalíková<br>
+                                               - Kristýna Lisalová<br>
+                                               - Žaneta Stehlíková, DiS.</li>
+                        <li>učebna  I. A   třídní učitelka - Mgr. Ivana Vítková</li>
+                        <li>učebna III. A  třídní učitelka - Mgr. Lenka Šínová</li>
+                        <li>učebna jazyků 1</li>
+                        <li>učebna II. B  třídní učitelka - Mgr. Markéta Nováková</li>
+                    </ol>
+                </section>
+                
+                <section class="floor">
+                    <h2>2. patro</h2>
+                    <ol class="room-list numbered">
+                        <li>kabinet cizích jazyků <br>
+                                                - Mgr. Lenka Bělašková<br>
+                                                 - Mgr. Marcela Fojtíková<br>
+                                                 - Mgr. Vilma Kučerová<br>
+                                                 - Mgr. Hana Šimperská</li>
+                        <li>učebna IV. A  třídní učitelka - Mgr. Blanka Střelcová</li>
+                        <li>kabinet 1. stupně <br>
+                                                - Mgr. Dana Fojtíková<br>
+                                              - Mgr. Blanka Střelcová<br>
+                                              - Bc. Michaela Černá<br>
+                                              - Martina Vaverková</li>
+                        <li>učebna IV. B  třídní učitelka - Mgr. Danuše Kozánková</li>
+                        <li>učebna IX. B  třídní učitel - Mgr. Petr Kašpar</li>
+                        <li>kabinet fyziky a matematiky - Mgr. Petr Kašpar<br>
+                                                       - Mgr. Michala Slováčková</li>
+                        <li>učebna fyziky, chemie VII. A  třídní učitelka - Mgr. Michala Slováčková</li>
+                        <li>kabinet chemie</li>
+                        <li>učebna V. B  třídní učitelka - Mgr. Dana Fojtíková</li>
+                        <li>kabinet 1. stupně <br>
+                                            - Mgr. Renata Slaměnová<br>
+                                              - Mgr. Veronika Čechmanová, DiS.<br>
+                                              - Milena Mičíková<br>
+                                              - Bc. Johana Špačková</li>
+                        <li>učebna V. A  třídní učitelka - Mgr. Renata Slaměnová</li>
+                    </ol>
+                </section>
+                
+                <section class="floor">
+                    <h2>3. patro</h2>
+                    <ol class="room-list numbered">
+                        <li>kabinet dějepisu a zeměpisu <br>
+                                                        - Mgr. Ludmila Bartlová<br>
+                                                        - Mgr. Renata Gerychová<br>
+                                                        - Mgr. Lucie Makuchová</li>
+                        <li>učebna VI. A  třídní učitelka - Ing. Bc. Kateřina Předínská</li>
+                        <li>kancelář zástupkyně ředitele pro 2. stupeň - Mgr. Dana Novotná<br>
+                            školní poradenské pracoviště   speciální pedagog - Mgr. Lucie Kropáčová</li>
+                        <li>učebna hudební výchovy VI. B  třídní učitelka - Mgr. Lucie Makuchová</li>
+                        <li>učebna výtvarné výchovy VII. B  třídní učitelka - Mgr. Marcela Fojtíková</li>
+                        <li>učebna jazyků 2</li>
+                        <li>učebna VIII. B  třídní učitelka - Mgr. Lenka Bělašková</li>
+                        <li>učebna VIII. A  třídní učitelka - Mgr. Iva Kočendová</li>
+                        <li>kabinet jazyka českého <br> 
+                                                    - Mgr. Jaroslav Čelechovský<br>
+                                                   - Ing. Michal Kmiť<br>
+                                                   - Mgr. Michaela Ovesná</li>
+                        <li>kabinet biologie - Mgr. Jaromír Kusák<br>
+                                             - Ing. Bc. Kateřina Předínská</li>
+                        <li>učebna biologie IX. A  třídní učitelka - Mgr. Renata Gerychová</li>
+                    </ol>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 9. ZŠ Zlín</p>
+        <p>
+            <a href="mailto:info@9zszlin.cz">info@9zszlin.cz</a> | Tel: +420 577 210 772<br>
+            <a href="admin.php">Administrace</a>
+        </p>
+      </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

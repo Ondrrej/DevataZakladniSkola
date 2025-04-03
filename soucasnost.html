@@ -1,0 +1,196 @@
+<!DOCTYPE HTML>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Současnost | 9. ZŠ Zlín</title>
+    
+    <meta name="description" content="Informace o současném stavu a fungování 9. ZŠ Zlín. Základní informace o škole, výuce a aktivitách." />
+    <meta name="keywords" content="9. ZŠ Zlín, základní škola, vzdělání, Zlín, současnost, informace o škole" />
+    
+    <meta property="og:title" content="Současnost | 9. ZŠ Zlín" />
+    <meta property="og:description" content="Informace o současném stavu a fungování 9. ZŠ Zlín. Základní informace o škole, výuce a aktivitách." />
+    <meta property="og:image" content="logo.png" />
+    <meta property="og:type" content="website" />
+    
+    <link rel="icon" href="logo.png" type="image/png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main>
+    <div class="navbar">
+        <div class="logo-placeholder">
+            <a href="index.html">
+            <img src="logo.png" alt="Logo">
+            </a>
+        </div>
+
+        <div class="nav-items">
+            <div class="nav-links">
+                <div class="nav-item dropdown">
+                    <a class="dropdown-toggle">O škole <i class="fa-solid fa-angle-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="index.html">Úvodní stránka</a>
+                        <a href="soucasnost.html">Současnost</a>
+                        <a href="historie.html">Historie</a>
+                        <a href="kontakty.html">Kontakty</a>
+                    </div>
+                </div>
+                
+                <div class="nav-item dropdown">
+                    <a class="dropdown-toggle">Dokumenty <i class="fa-solid fa-angle-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="rozvrhy.html">Rozvrh hodin 2024/2025</a>
+                        <a href="dokumenty.html">Dokumenty</a>
+                    </div>
+                </div>
+                
+                <div class="nav-item dropdown">
+                    <a class="dropdown-toggle">Pro žáky <i class="fa-solid fa-angle-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="el_zakovska_knizka.html">Elektronická žákovská knížka</a>
+                        <a href="skolni_email.html">Školní e-mail (Office 365)</a>
+                        <a href="specialni_pedagog.html">Speciální pedagog ve škole</a>
+                    </div>
+                </div>
+                
+                <div class="nav-item dropdown">
+                    <a class="dropdown-toggle">Organizace<i class="fa-solid fa-angle-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="skolni_zamestnanci.html">Zaměstnanci školy</a>
+                        <a href="obsazeni_uceben.html">Obsazení učeben</a>
+                        <a href="skolni_druzina.html">Školní družina</a>
+                        <a href="http://www.sjhradska.cz/">Školní jídelna</a>
+                    </div>
+                </div>
+            </div>
+            
+            <form class="search-form desktop" method="GET" action="search.php">
+                <input type="text" name="q" placeholder="Vyhledat..." required>
+                <button type="submit">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 
+                                 0 10-1.397 1.398h-.001l3.85 3.85a1 
+                                 1 0 001.415-1.414l-3.85-3.85zm-5.242 
+                                 1.656a5 5 0 110-10 5 5 0 010 10z"/>
+                    </svg>
+                </button>
+            </form>
+        </div>
+
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-dropdown">
+                <a class="mobile-dropdown-toggle">O škole <i class="fa-solid fa-angle-down"></i></a>
+                <div class="mobile-dropdown-menu">
+                    <a href="index.html">Úvodní stránka</a>
+                    <a href="soucasnost.html">Současnost</a>
+                    <a href="historie.html">Historie</a>
+                    <a href="kontakty.html">Kontakty</a>
+                </div>
+            </div>
+            
+            <div class="mobile-dropdown">
+                <a class="mobile-dropdown-toggle">Dokumenty <i class="fa-solid fa-angle-down"></i></a>
+                <div class="mobile-dropdown-menu">
+                    <a href="rozvrhy.html">Rozvrh hodin 2024/2025</a>
+                    <a href="dokumenty.html">Dokumenty</a>
+                </div>
+            </div>
+            
+            <div class="mobile-dropdown">
+                <a class="mobile-dropdown-toggle">Pro žáky <i class="fa-solid fa-angle-down"></i></a>
+                <div class="mobile-dropdown-menu">
+                    <a href="el_zakovska_knizka.html">Elektronická žákovská knížka</a>
+                    <a href="skolni_email.html">Školní e-mail (Office 365)</a>
+                    <a href="specialni_pedagog.html">Speciální pedagog ve škole</a>
+                </div>
+            </div>
+            
+            <div class="mobile-dropdown">
+                <a class="mobile-dropdown-toggle">Organizace a zázemí <i class="fa-solid fa-angle-down"></i></a>
+                <div class="mobile-dropdown-menu">
+                    <a href="skolni_zamestnanci.html">Zaměstnanci školy</a>
+                    <a href="obsazeni_uceben.html">Obsazení učeben</a>
+                    <a href="skolni_druzina.html">Školní družina</a>
+                    <a href="http://www.sjhradska.cz/">Školní jídelna</a>
+                </div>
+            </div>
+            
+            <form class="search-form mobile" method="GET" action="search.php">
+                <input type="text" name="q" placeholder="Vyhledat..." required>
+                <button type="submit">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 
+                                 0 10-1.397 1.398h-.001l3.85 3.85a1 
+                                 1 0 001.415-1.414l-3.85-3.85zm-5.242 
+                                 1.656a5 5 0 110-10 5 5 0 010 10z"/>
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </div>
+
+        <div class="contacts">
+            <h1>Naše škola se představuje</h1>
+            
+            <div class="contact-section">
+                <h2>Základní informace o škole</h2>
+                <p>
+                    Základní škola Zlín, Štefánikova 2514, příspěvková organizace je zařazena do sítě škol ze dne 14.3.1996, č. j. 1204/63, identifikační číslo školy (IZO) 600114228. Zřizovatelem školy je Statutární město Zlín, náměstí Míru 12, 760 01 Zlín. Naše škola poskytuje základní vzdělání, vyučování probíhá podle platných učebních dokumentů, schválených MŠMT ČR. Vyučujeme podle školního vzdělávacího programu pro základní vzdělávání "Devítka pro život".
+                </p>
+            </div>
+            
+            <div class="contact-section">
+                <h2>Výuka a vzdělávací aktivity</h2>
+                <p>
+                    Od třetího ročníku vyučujeme anglický jazyk, od 7. ročníku i německý jazyk. Žáci 1. stupně absolvují ve 2.–3. ročníku výuku plavání, žáci 2. stupně se mohou od 7. ročníku zúčastnit lyžařského výcvikového kurzu, od 2. ročníku pořádáme školy v přírodě. V průběhu školního roku uskutečňujeme celoškolní a ročníkové projektové vyučování.
+                </p>
+            </div>
+            
+            <div class="contact-section">
+                <h2>Organizace školy</h2>
+                <p>
+                    Škola je bezbariérová, má devět ročníků (18 tříd). První stupeň tvoří první až pátý ročník, druhý stupeň šestý až devátý ročník. Školní družina se nachází v dětském pavilonu Kolektivního domu Zlín. Školská rada má celkem 6 členů (2 členové zastupují zřizovatele, 2 rodiče žáků a 2 pedagogický sbor). Při škole pracuje Spolek rodičů při 9. ZŠ Zlín. Rodičovskou veřejnost zastupuje v nejvyšším orgánu "Radě rodičů" zástupce každé třídy. Tento spolek významně pomáhá zkvalitnit vybavení školy. Stravování žáků probíhá ve školní jídelně Hradská 5189, 760 01 Zlín. Školní jídelna je od 1.1.2012 součástí školy, od školního roku 2015/2016 se účastníme projektu Zdravá školní jídelna.
+                </p>
+            </div>
+            
+            <div class="contact-section">
+                <h2>Projekty a rozvojové aktivity</h2>
+                <p>
+                    Škola je zapojena do projektů Evropské unie Ovoce a zelenina do škol a Školní mléko. Ve školním roce 2022/2023 pokračujeme v realizaci EU projektu Šablony pro 9. ZŠ Zlín 3. Cílem je zlepšení kvality vzdělávání a zlepšení výsledků žáků v klíčových kompetencích. Ve spolupráci se zřizovatelem školy probíhá rekonstrukce multimediální učebny, připravujeme rekonstrukci jazykové a počítačové učebny z EU projektů. V září 2022 skončila generální oprava školní jídelny Hradská. Provoz jídelny bude zahájen od 12.9.2022.
+                </p>
+            </div>
+            
+            <div class="contact-section">
+                <h2>Spolupráce s partnery</h2>
+                <p>
+                    Škola spolupracuje s organizacemi, zaměřenými na volnočasové aktivity dětí, v průběhu školního roku se žáky navštěvujeme různé kulturní akce např. v Městském divadle, Kongresovém centru, Malé scéně. Spolupracujeme také s Muzeem JV Moravy a Krajskou knihovnou Františka Bartoše.
+                </p>
+            </div>
+        </div>
+        
+
+    </main>
+
+    <footer>
+        <p>© 2025 9. ZŠ Zlín</p>
+        <p>
+            <a href="mailto:info@9zszlin.cz">info@9zszlin.cz</a> | Tel: +420 577 210 772<br>
+            <a href="admin.php">Administrace</a>
+        </p>
+      </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
